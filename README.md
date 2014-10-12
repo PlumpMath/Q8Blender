@@ -9,4 +9,4 @@ Ask anyone what the minimum value is two ways as shown below:
 ![minimum][min]
 The goal is to change the _impossible to understand_ equations of quantum mechanics into a visual game people can play with.
 
-[min]:https://github.com/dougsweetser/Q8Blender/docs/images/minimum.png
+[min]:https://github.com/dougsweetser/Q8Blender/blob/master/docs/images/minimum.png
