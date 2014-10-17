@@ -1,6 +1,7 @@
 import bge
 from bge import logic
 import q8
+import settings
 
 def main(cont):
     own = cont.owner
@@ -23,6 +24,6 @@ def main(cont):
 
     repeat_after = 600
     own['timer'] += 1
-    own['timer'] %= repeat_after
+    own['timer'] %= settings.CYCLE_LENGTH
 
     print(own['timer'])

@@ -1,0 +1,3 @@
+DEBUG = False
+
+CYCLE_LENGTH = 600
