@@ -1,3 +1,3 @@
-Hamster.000,Genny,1,0,0
-Hamster.001,Pete,3,2,0
-Hamster.002,Ringo,5,2,0
+Hamster.000,1,0,0,Name.000,Genny
+Hamster.001,3,2,0,Name.001,Jim
+Hamster.002,5,2,0,Name.002,Ann
