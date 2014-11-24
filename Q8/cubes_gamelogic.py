@@ -8,7 +8,7 @@ def main(cont):
 
     scene = logic.getCurrentScene()
     objects = scene.objects
-    objects["cube_100"].visible = False
+    objects["cube_100"].visible = True
     objects["cube_101"].visible = True
     objects["cube_102"].visible = True
 
@@ -23,7 +23,25 @@ def main(cont):
         own['timer'] = 0
 
     repeat_after = 600
+
+    if own['timer'] == 0:
+        set_initial_position(objects)
+
     own['timer'] += 1
     own['timer'] %= settings.CYCLE_LENGTH
 
     print(own['timer'])
+
+
+def set_initial_position(objects):
+    """Use values in settings to set position of objects."""
+
+    object_names = ["cube_100", "cube_101", "cube_102"]
+
+    for object_name in object_names:
+        objects[object_name].position.x = settings.INITIAL_POSITION[object_name][1]
+        objects[object_name].position.y = settings.INITIAL_POSITION[object_name][2]
+        objects[object_name].position.z = settings.INITIAL_POSITION[object_name][3]
+        objects[object_name].position.x -= settings.INITIAL_POSITION[object_name][5]
+        objects[object_name].position.y -= settings.INITIAL_POSITION[object_name][6]
+        objects[object_name].position.z -= settings.INITIAL_POSITION[object_name][7]
