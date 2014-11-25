@@ -12,10 +12,11 @@ def main(cont):
     objects["cube_101"].visible = True
     objects["cube_102"].visible = True
 
-    d1 = [0.001, 0.005, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008]
+    d1 = [0.001, 0.0005, 0.0003, 0.0004, 0.0005, 0.0006, 0.0007, 0.0008]
     qd1 = q8.Q8(random = True)
-    qd1.constant_velocity(objects["cube_101"], d1)
     qd1.constant_velocity(objects["cube_102"], d1)
+    qd1.constant_velocity(objects["cube_101"], d1)
+    qd1.constant_velocity(objects["cube_100"], d1)
 
     # A cyclic timer
 
